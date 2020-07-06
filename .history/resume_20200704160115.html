@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my resume</title>
+    <link rel="stylesheet" href="./a.css">
+    <script>
+        function uncheck() {
+            var radio = document.getElementById("nan");
+            if (radio.tag == 1) {
+                radio.checked = false;
+                radio.tag = 0;
+            } else {
+                radio.checked = true;
+                radio.tag = 1;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="topnavbar clearfix">
+        <a class="logo" href="#" alt="logo" style="float:left;">
+            <span class="rs">RS</span>
+            <span class="card">card</span>
+        </a>
+        
+        <nav style="float: right;">
+            
+                <ul class="clearfix">
+                    <li><a href="#">关于</a>
+                    </li>
+                    <li><a href="#">作品</a>
+                    </li>
+                    <li><a href="#">博客</a>
+                    </li>
+                    <li><a href="#">联系</a>
+                    </li>
+                </ul>
+            
+        </nav>
+    </div>
+    <div class="banner">
+
+    </div>
+    <main>
+        <div class="card">
+            <div class="picture">
+                <img src="#" alt="头像">
+            </div>
+            <div class="text">
+                <div class="profile">
+                    <span class="welcome">hello</span>
+                    <h1>cloud vin</h1>
+                    <p>前端开发工程师</p>
+                    <hr>
+                    <dl>
+                        <dt>age</dt>
+                        <dd>24</dd>
+                        <dt>address</dt>
+                        <dd>sichuan</dd>
+                        <dt>e-mail</dt>
+                        <dd>934841338@qq.com</dd>
+                        <dt>tel</dt>
+                        <dd>13808061186</dd>
+                    </dl>
+                </div>
+                <footer class="media">
+                    <a href="#"><img src="#" alt=".." /></a>
+                    <a href="#"><img src="#" alt=".." /></a>
+                    <a href="#"><img src="#" alt=".." /></a>
+                    <a href="#"><img src="#" alt=".." /></a>
+                    <a href="#"><img src="#" alt=".." /></a>
+                    <a href="#"><img src="#" alt=".." /></a>
+                </footer>
+
+            </div>
+        </div>
+        <a class="button" href="#">download resume</a>
+        <p>
+            求知若渴，虚心若愚。
+        </p>
+    </main>
+    <form>
+
+        <fieldset>
+            <legend>用户信息</legend>
+            姓名<input type="text" value="你的名字"><br>
+            账号<input value="zh"><br>
+            密码<input type="password" value="pwd"><br>
+            性别:<input type="radio" id="nan" name="radio" value="male" onclick="uncheck()">
+            <lable for="nan">男</lable>
+            <input type="radio" id="nv" name="radio" value="female" onclick="uncheck()"><label for="nv">女</label>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

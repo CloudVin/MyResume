@@ -1,0 +1,100 @@
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    background-color: #efefef;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    
+}
+.topnavbar  nav > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topnavbar nav > ul > li{
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+.topnavbar nav >ul >li >a{
+    font-size : 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+}
+.topnavbar nav > ul>li>a:hover{
+    border-bottom:3px solid #ee8c65;
+}
+.topnavbar{
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 2;
+    
+}
+.topnavbar .logo{
+    
+    font-family: "Cooper Black";
+    font-size: 26px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+.topnavbar .logo .rs{
+   
+    color: #ee8c65;
+}
+.topnavbar .logo .card{
+    color: white;
+}
+.banner{
+    height: 600px;
+    background-image: url(./img/ms1.jpg) ;
+    background-size:100% 100%;
+    z-index: 1;
+    position: relative;
+    top: -85px;
+    margin: 0px;
+}
+.banner .mask{
+    height: 600px;
+    background-color: rgba(0,0,0,0.5);
+}
+.usercard{
+    border: 1px solid red;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+.avatar{
+    height: 360px;
+    width: 220px;
+}
+
+.test1{
+    cursor: pointer;
+    color: #ee8c65;
+}
+.test1:visited{
+    color:pink;
+}
+.test1:hover{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+.test1:active{
+    color: aqua;
+}

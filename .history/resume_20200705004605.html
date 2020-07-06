@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my resume</title>
+    <link rel="stylesheet" href="./a.css">
+    <script>
+        function uncheck() {
+            var radio = document.getElementById("nan");
+            if (radio.tag == 1) {
+                radio.checked = false;
+                radio.tag = 0;
+            } else {
+                radio.checked = true;
+                radio.tag = 1;
+            }
+        }
+    </script>
+    <script src="//at.alicdn.com/t/font_1923572_6s8jjadjos.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+            <a class="logo" href="#" alt="logo" style="float:left;">
+                <span class="rs">RS</span>
+                <span class="card">card</span>
+            </a>
+
+            <nav style="float: right;">
+
+                <ul class="clearfix">
+                    <li><a href="#">关于</a>
+                    </li>
+                    <li><a href="#">作品</a>
+                    </li>
+                    <li><a href="#">博客</a>
+                    </li>
+                    <li><a href="#">联系</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main>
+        <div class="userCard">
+            <div class="pictureAndText clearfix">
+                <div class="picture">
+                    <img class="avatar" src="./img/avatar.jpg" alt="头像">
+                </div>
+                <div class="text">
+                    <div class="profile">
+                        <span class="welcome">hello</span>
+                        <div class="triangle"></div>
+                        <h1>cloud vin</h1>
+                        <p>前端开发工程师</p>
+                        <hr/>
+                        <dl>
+                            <dt>年龄</dt>
+                            <dd>24</dd>
+                            <dt>地址</dt>
+                            <dd>四川</dd>
+                            <dt>e-mail</dt>
+                            <dd>934841338@qq.com</dd>
+                            <dt>电话</dt>
+                            <dd>13808061186</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <footer class="media">
+                <a href="#">
+                    <img src="#" alt=".." />
+                </a>
+                <a href="#">
+                    <img src="#" alt=".." />
+                </a>
+                <a href="#">
+                    <img src="#" alt=".." />
+                </a>  
+            </footer>
+        </div>
+        <a class="button" href="#">download resume</a>
+        <a class="test1" href="#">
+            求知若渴，虚心若愚。
+        </a>
+    </main>
+    <form>
+
+        <fieldset>
+            <legend>用户信息</legend>
+            姓名<input type="text" value="你的名字"><br>
+            账号<input value="zh"><br>
+            密码<input type="password" value="pwd"><br>
+            性别:<input type="radio" id="nan" name="radio1" value="male" onclick="uncheck()">
+            <lable for="nan">男</lable>
+            <input type="radio" id="nv" name="radio1" value="female" onclick="uncheck()"><label for="nv">女</label>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

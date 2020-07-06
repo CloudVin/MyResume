@@ -1,0 +1,41 @@
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.topnavbar>nav>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topnavbar>nav>ul>li{
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+.topnavbar>nav>ul>li>a{
+    font-size : 16px;
+    color: darkgray;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+}
+.topnavbar>nav>ul>li>a:hover{
+    border-bottom:3px solid #e06527;
+}
+.rs{
+    color: #e06527;
+    font-family: f;
+    
+}
